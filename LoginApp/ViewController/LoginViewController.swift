@@ -16,11 +16,20 @@ class LoginViewController: UIViewController {
     // MARK: - Private properties
     private let user = "user"
     private let password = "password"
+    private let userData = User.getData()
    
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.user = user
+        guard let tabVC = segue.destination as? UITabBarController else { return }
+        for viewController in tabVC.viewControllers! {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userName = userData.userName
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let aboutUserVC = navigationVC.topViewController as? UserInfoViewController else { return }
+                aboutUserVC.aboutMeInfo = userData.description
+                aboutUserVC.myPhoto = userData.myPhoto
+            } else { return }
+        }
     }
     
     // MARK: IBActions

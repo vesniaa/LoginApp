@@ -16,8 +16,8 @@
 		8C17CDB227DDE2D900C2E876 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17CDB127DDE2D900C2E876 /* LoginViewController.swift */; };
 		8C17CDB427DDE44A00C2E876 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17CDB327DDE44A00C2E876 /* WelcomeViewController.swift */; };
 		8C17CDB627DDE4FE00C2E876 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17CDB527DDE4FE00C2E876 /* PhotoViewController.swift */; };
-		8C17CDB827DDF05000C2E876 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17CDB727DDF05000C2E876 /* InfoViewController.swift */; };
-		8C17CDBA27DDFE7000C2E876 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17CDB927DDFE7000C2E876 /* Person.swift */; };
+		8C17CDBA27DDFE7000C2E876 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17CDB927DDFE7000C2E876 /* User.swift */; };
+		8C17CDC127DE3FCF00C2E876 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C17CDC027DE3FCF00C2E876 /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		8C17CDB127DDE2D900C2E876 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C17CDB327DDE44A00C2E876 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8C17CDB527DDE4FE00C2E876 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		8C17CDB727DDF05000C2E876 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		8C17CDB927DDFE7000C2E876 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8C17CDB927DDFE7000C2E876 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8C17CDC027DE3FCF00C2E876 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 		8C17CDBB27DDFEE500C2E876 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8C17CDB927DDFE7000C2E876 /* Person.swift */,
+				8C17CDB927DDFE7000C2E876 /* User.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -88,10 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				8C17CDA127DDE1D000C2E876 /* ViewController.swift */,
-				8C17CDB727DDF05000C2E876 /* InfoViewController.swift */,
 				8C17CDB527DDE4FE00C2E876 /* PhotoViewController.swift */,
 				8C17CDB327DDE44A00C2E876 /* WelcomeViewController.swift */,
 				8C17CDB127DDE2D900C2E876 /* LoginViewController.swift */,
+				8C17CDC027DE3FCF00C2E876 /* UserInfoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -195,12 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C17CDB227DDE2D900C2E876 /* LoginViewController.swift in Sources */,
+				8C17CDC127DE3FCF00C2E876 /* UserInfoViewController.swift in Sources */,
 				8C17CDB427DDE44A00C2E876 /* WelcomeViewController.swift in Sources */,
 				8C17CDA227DDE1D000C2E876 /* ViewController.swift in Sources */,
-				8C17CDB827DDF05000C2E876 /* InfoViewController.swift in Sources */,
 				8C17CD9E27DDE1D000C2E876 /* AppDelegate.swift in Sources */,
 				8C17CDA027DDE1D000C2E876 /* SceneDelegate.swift in Sources */,
-				8C17CDBA27DDFE7000C2E876 /* Person.swift in Sources */,
+				8C17CDBA27DDFE7000C2E876 /* User.swift in Sources */,
 				8C17CDB627DDE4FE00C2E876 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
