@@ -18,7 +18,7 @@ class PhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         rememberLabel.text = "Это я \(userName), и я рада тебя видеть!"
-        photoImageView.layer.cornerRadius = 60
+        photoImageView.layer.cornerRadius = 20
         photoImageView.layer.borderWidth = 2
         photoImageView.layer.borderColor = UIColor.lightGray.cgColor
     }
