@@ -12,11 +12,13 @@ class PhotoViewController: UIViewController {
     @IBOutlet weak var rememberLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     
-    let realName = "Евгения"
+    let userName = "Евгения"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rememberLabel.text = " Привет меня зовут \(realName)"
-        
+        rememberLabel.text = " Привет меня зовут \(userName)"
+        photoImageView.layer.cornerRadius = 60
+        photoImageView.layer.borderWidth = 2
+        photoImageView.layer.borderColor = UIColor.lightGray.cgColor
     }
 }
